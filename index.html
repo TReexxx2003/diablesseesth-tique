@@ -1,24 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
+    <meta charset="UTF-8">
     <title>Diablesse Esthétique</title>
     <style>
         body {
+            margin: 0;
+            font-family: Arial, sans-serif;
             background: #111;
             color: white;
-            font-family: Arial;
-            text-align: center;
-            margin-top: 100px;
         }
+
+        /* MENU */
+        nav {
+            background: #000;
+            padding: 15px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            box-shadow: 0 2px 10px #ff00ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff00ff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 100px 20px;
+            min-height: 100vh;
+        }
+
+        #accueil { background: #111; }
+        #apropos { background: #1a1a1a; }
+        #contact { background: #222; }
+
         h1 {
-            color: rgb(234, 0, 255);
+            color: #ff00ff;
         }
     </style>
 </head>
 <body>
 
-    <h1>Bienvenue sur Diablesse Esthétique 👑</h1>
-    <p>Produit de cils💫</p>
+    <!-- MENU -->
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#apropos">À propos</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- SECTIONS -->
+    <section id="accueil">
+        <h1>Accueil</h1>
+        <p>Bienvenue sur Diablesse Esthétique👑.</p>
+    </section>
+
+    <section id="apropos">
+        <h1>À propos</h1>
+        <p>Je vends des produits de cils et autres💫.</p>
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <p>Tu peux me contacter ici.</p>
+    </section>
 
 </body>
 </html>
