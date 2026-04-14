@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <title>Diablesse Esthétique</title>
 
-    <!-- Librairie d'animations -->
-    <link href="https://image2url.com/r2/bucket2/images/1775958004965-7dac710f-236d-4441-b38e-3300a9d7cebe.jpg" rel="stylesheet">
-    <script src="https://image2url.com/r2/bucket2/images/1775958004965-7dac710f-236d-4441-b38e-3300a9d7cebe.jpg"></script>
-
+    
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #111;
             color: white;
             scroll-behavior: smooth;
+
+            background-image: url('https://image2url.com/r2/bucket2/images/1775958004965-7dac710f-236d-4441-b38e-3300a9d7cebe.jpg');
+            background-size: cover;        /* prend tout l’écran */
+            background-position: center;   /* centre l’image */
+            background-attachment: fixed;  /* effet pro au scroll */
+            background-repeat: no-repeat;
         }
 
         nav {
@@ -39,25 +41,12 @@
         }
 
         section {
-            padding: 120px 20px;
-            min-height: 100vh;
-            text-align: center;
+          padding: 120px 20px;
+          min-height: 100vh;
+          text-align: center;
+          background: rgba(0, 0, 0, 0.65); /* effet voile sombre pour lire le texte */
+          backdrop-filter: blur(3px);      /* effet moderne flou */
         }
-
-        h1 {
-            color: #ff00ff;
-        }
-
-        img {
-            width: 300px;
-            border-radius: 15px;
-            margin-top: 20px;
-            box-shadow: 0 0 20px #ff00ff;
-        }
-
-        #accueil { background: #111; }
-        #apropos { background: #1a1a1a; }
-        #galerie { background: #222; }
     </style>
 </head>
 <body>
